@@ -1,2 +1,2 @@
-$- Pr0Lancing
+$- pr0Landing
 - += freelancing pr0jects
