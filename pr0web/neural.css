@@ -1,0 +1,123 @@
+.particle-network-animation {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70vh;
+  /* background-color: ; */
+}
+
+.particle-network-animation::before {
+  z-index: -2;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.glow {
+  z-index: -1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-image: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.025), transparent);
+}
+
+.glow-1 {
+  width: 150vw;
+  height: 150vh;
+  margin-top: -75vh;
+  margin-left: -75vw;
+  -webkit-animation: glow-1-move 25s linear infinite both;
+          animation: glow-1-move 25s linear infinite both;
+}
+
+@-webkit-keyframes glow-1-move {
+  from {
+    -webkit-transform: translate(-100%, 100%);
+            transform: translate(-100%, 100%);
+  }
+  to {
+    -webkit-transform: translate(100%, -100%);
+            transform: translate(100%, -100%);
+  }
+}
+
+@keyframes glow-1-move {
+  from {
+    -webkit-transform: translate(-100%, 100%);
+            transform: translate(-100%, 100%);
+  }
+  to {
+    -webkit-transform: translate(100%, -100%);
+            transform: translate(100%, -100%);
+  }
+}
+
+.glow-2 {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -50vh;
+  margin-left: -50vw;
+  -webkit-animation: glow-2-move 25s linear 8.33333s infinite both;
+          animation: glow-2-move 25s linear 8.33333s infinite both;
+}
+
+@-webkit-keyframes glow-2-move {
+  from {
+    -webkit-transform: translate(-100%, 0%);
+            transform: translate(-100%, 0%);
+  }
+  to {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+}
+
+@keyframes glow-2-move {
+  from {
+    -webkit-transform: translate(-100%, 0%);
+            transform: translate(-100%, 0%);
+  }
+  to {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+}
+
+.glow-3 {
+  width: 120vw;
+  height: 120vh;
+  margin-top: -60vh;
+  margin-left: -60vw;
+  -webkit-animation: glow-3-move 25s linear 16.66667s infinite both;
+          animation: glow-3-move 25s linear 16.66667s infinite both;
+}
+
+@-webkit-keyframes glow-3-move {
+  from {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+  to {
+    -webkit-transform: translate(0%, -100%);
+            transform: translate(0%, -100%);
+  }
+}
+
+@keyframes glow-3-move {
+  from {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+  to {
+    -webkit-transform: translate(0%, -100%);
+            transform: translate(0%, -100%);
+  }
+}
+/*# sourceMappingURL=neural.css.map */
