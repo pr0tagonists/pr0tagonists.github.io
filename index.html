@@ -70,9 +70,14 @@
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+    //   Sound
+    window.onload = function() {
+    document.getElementById("l_audio").play();
+};  
 </script>      
 </head>
 <body>
+<audio volume="0.1" id="l_audio" src="sounds/l.mp3" loop="loop"></audio>
 <canvas id="canvas" height="100" width="100"></canvas>
 <nav class="navbar navbar-expand-lg  ftco-navbar-light">
 <div class="container-xl">
