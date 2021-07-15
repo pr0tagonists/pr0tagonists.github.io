@@ -2,3 +2,15 @@
   color:#fff; 
   text-decoration: none !important;
 }
+
+body {
+  overflow: auto;
+  /* background: #eee; */
+}
+
+canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}

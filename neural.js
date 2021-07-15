@@ -307,3 +307,4 @@
 pna = new ParticleNetworkAnimation();	pna.init($('.particle-network-animation')[0]);
 
 }());
+
