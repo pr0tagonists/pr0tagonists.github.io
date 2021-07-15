@@ -7,83 +7,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="preconnect" href="https://fonts.gstatic.com/">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+<link rel="stylesheet" href="../../library/stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../library/cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
 <link rel="stylesheet" href="css/A.animate.css%2bflaticon.css%2btiny-slider.css%2bglightbox.min.css%2baos.css%2bstyle.css%2cMcc.W1uBoTnV2t.css.pagespeed.cf.ZHcSg7Vwgd.css" />
 <link rel="stylesheet" href="neural.css" />
 <link rel="stylesheet" href="css/style.css" />     
 <script src="perlin.js"></script>
-<script>
-       var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    }; 
-</script>      
+<script src="typewriter.js"></script>      
 </head>
 <body>
-<audio id="l_audio" src="sounds/l.mp3" loop="loop"></audio>
-<script>
-    //   Sound
-    window.onload = function() {
-    document.getElementById("l_audio").play();
-}; 
-</script>
+<audio id="l_audio" src="sounds/l.mp3"></audio>
 <canvas id="canvas" height="100" width="100"></canvas>
 <nav class="navbar navbar-expand-lg  ftco-navbar-light">
 <div class="container-xl">
-<a class="navbar-brand d-flex align-items-center" href="index-2.html">
+<a class="navbar-brand d-flex align-items-center" href="index.html">
 <div class="icon-logo d-flex align-items-center justify-content-center"><span class="flaticon flaticon-layers"></span></div>
 <span class="">Pr0tagonists</span>
 </a>
@@ -106,8 +43,8 @@
 <div class="col-md-10 col-10 col-xl-8">
 <div class="text" data-aos="fade-up" data-aos-duration="1000">
 <a href="#scroll" class="icon-scroll"><span class="ion ion-ios-arrow-round-down"></span></a>
-<h1 class="mb-5">Who writes the code ? <br><a class="typewrite" data-period="2000" data-type='[ "Posterity_", "Posterity_", "Posterity_", "Posterity_" ]'></a><span class="wrap"></span></h1>
-<p class="mt-4"><a href="#helo" class="btn-custom">Hire us <span class="ion ion-ios-arrow-round-forward"></span></a></p>  
+<h1 class="mb-5">Who writes the code ? <br><a class="typewrite" data-period="2000" data-type='[ "Posterity_", "Posterity_", "Posterity_", "Posterity_" ]'><span class="wrap" id="posterity"></span><a></h1>
+<p class="mt-4"><a class="nav-link" href="contact.html" class="btn-custom">Hire us <span class="ion ion-ios-arrow-round-forward"></span></a></p>  
 </div>
 </div>
 </div>
@@ -518,7 +455,7 @@
 <div class="col-md-6 col-lg">
 <div class="ftco-footer-widget mb-4">
 <h2 class="ftco-heading-2 logo d-flex">
-<a class="navbar-brand d-flex align-items-center" href="index-2.html">
+<a class="navbar-brand d-flex align-items-center" href="index.html">
 <div class="icon-logo d-flex align-items-center justify-content-center"><span class="flaticon flaticon-layers"></span></div>
 <span class="">pr0tagonists</span>
 </a>
@@ -564,7 +501,7 @@
 <div class="row">
 <div class="col-md-12 text-center">
 <p class="mb-0" style="color: rgba(255,255,255,.5); font-size: 13px;">
-Copyright &copy;<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved <br><i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="#org.link" target="_blank" rel="nofollow noopener">Pr0tagonists</a>
+Copyright &copy;<script data-cfasync="false" src="library/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved <br><i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="#org.link" target="_blank" rel="nofollow noopener">Pr0tagonists</a>
 </p>
 </div>
 </div>
@@ -573,7 +510,7 @@ Copyright &copy;<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloud
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script defer src="static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66e3a47e58cf0e3b","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.6.0","si":10}'></script>
+<script defer src="library/static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"66e3a47e58cf0e3b","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.6.0","si":10}'></script>
 <script src="neural.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/tiny-slider.js"></script>
