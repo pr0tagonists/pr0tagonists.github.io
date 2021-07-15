@@ -17,9 +17,7 @@ canvas {
 
 .navbar 
 .container
-.container-x1{
-  z-index: 101;
-}
-{
+.container-x1
+.ftco-section{
   z-index: 101;
 }
