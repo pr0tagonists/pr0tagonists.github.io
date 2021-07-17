@@ -17,3 +17,8 @@ canvas {
 .cur{
   font-family: 'Courier Prime', monospace;
 }
+
+#alieng{
+  position: relative;
+  top: -7px;
+}
