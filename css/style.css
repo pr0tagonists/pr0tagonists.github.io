@@ -23,6 +23,11 @@ canvas {
   top: -7px;
 }
 
+#git{
+  position: relative;
+  top: -2px;
+}
+
 #zero{
   color: red;
   font-family: 'Roboto', sans-serif;
