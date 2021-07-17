@@ -1,5 +1,5 @@
-* { 
-  color:#fff; 
+* {
+  color:#fff;
   text-decoration: none !important;
 }
 
@@ -21,4 +21,10 @@ canvas {
 #alieng{
   position: relative;
   top: -7px;
+}
+
+#zero{
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
