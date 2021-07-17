@@ -13,3 +13,7 @@ canvas {
   width: 100%;
   z-index: -1;
 }
+
+.cur{
+  font-family: 'Courier Prime', monospace;
+}
