@@ -25,7 +25,7 @@ canvas {
 
 #git{
   position: relative;
-  top: -2px;
+  top: -5px;
 }
 
 #zero{
@@ -37,4 +37,9 @@ canvas {
 #web{
   position: relative;
   top: 22px;
+}
+
+.hire{
+  position: relative;
+  top: -4px;
 }
