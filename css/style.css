@@ -4,14 +4,13 @@
 }
 
 body {
-  overflow: auto;
+  overflow: auto !important;
 }
 
 canvas {
   position: absolute;
   height: 100%;
   width: 100%;
-  scroll-x: hidden !important;
   z-index: -1;
 }
 
