@@ -1,11 +1,10 @@
 * {
   color:#fff;
   text-decoration: none !important;
-  overflow-x: auto;
 }
 
 body {
-  overflow: auto !important;
+  overflow-x: hidden;
 }
 
 canvas {
