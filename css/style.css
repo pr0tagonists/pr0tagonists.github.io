@@ -3,7 +3,7 @@
   text-decoration: none !important;
 }
 
-body, html { overflow-x:hidden;}
+body, html { overflow-x:hidden !important;}
 
 canvas {
   position: absolute;
