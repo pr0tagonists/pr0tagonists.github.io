@@ -18,6 +18,24 @@ html {
     background: #FF0000;
 }
 
+/* Bar */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main .progress-bar {
+  position: fixed;
+  top: 0;
+  height: 3px;
+  width: 0;
+  background-image: linear-gradient(90deg, #FF0000 0%, #FF0000 100%);
+  z-index: 11;
+  transition: width 0.2s;
+  will-change: width;
+}
+
 canvas {
   position: absolute;
   height: 100%;
