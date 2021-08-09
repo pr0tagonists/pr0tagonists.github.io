@@ -8,6 +8,7 @@ body, html { overflow-x:hidden !important;}
 html {
     overflow: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth !important;
 }
 ::-webkit-scrollbar {
     width: 0;
@@ -23,6 +24,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth !important;
 }
 
 main .progress-bar {
