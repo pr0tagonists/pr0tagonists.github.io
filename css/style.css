@@ -112,7 +112,7 @@ canvas {
   font-family: 'Roboto', sans-serif;
 }
 
-.blink_me {
+/* .blink_me {
   animation: blinker 1s linear infinite;
 }
 
@@ -120,7 +120,7 @@ canvas {
   50% {
     opacity: 0;
   }
-}
+} */
 
 #alieng{
   position: relative;
