@@ -192,6 +192,6 @@ canvas {
 
 @media (max-width:480px){
     html, body{
-    height: 40% !important;
+    height: 30vh !important;
     }
 }
