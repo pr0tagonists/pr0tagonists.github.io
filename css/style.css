@@ -191,7 +191,7 @@ canvas {
 /* Mobile Screen Media Queries */
 
 @media (max-width:480px){
-   #canvas{
+   .particle-network-animation{
    display: none !important;
   }
 }
