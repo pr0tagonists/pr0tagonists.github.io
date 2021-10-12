@@ -192,7 +192,7 @@ canvas {
 
 @media (max-width:480px){
     canvas{
-    position: relative !important;
+    position: absolute !important;
     height: 30vh !important;
   }
 }
