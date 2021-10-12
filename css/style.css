@@ -195,4 +195,7 @@ canvas {
     height: 30vh !important;
     overflow: scroll;
     }
+  html{
+    overflow: scroll;
+  }
 }
