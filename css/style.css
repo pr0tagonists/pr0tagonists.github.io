@@ -187,3 +187,12 @@ canvas {
 #phov:hover {
   color: #FFF !important;
 }
+
+/* Mobile Screen Media Queries */
+
+@media (max-width:480px){
+  .canva{
+    position: relative !important;
+    height : 500px !important;
+  }
+}
