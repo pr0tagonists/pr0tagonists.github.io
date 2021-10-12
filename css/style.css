@@ -190,7 +190,7 @@ canvas {
 
 /* Mobile Screen Media Queries */
 
-@media (max-width:480px){
+/* @media (max-width:480px){
     html, body{
     height: 30vh !important;
     overflow: scroll;
@@ -198,4 +198,4 @@ canvas {
   html{
     overflow: scroll;
   }
-}
+} */
