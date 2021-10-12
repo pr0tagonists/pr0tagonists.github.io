@@ -3,9 +3,6 @@
   text-decoration: none !important;
 }
 
-html, body{
-  height: 100% !important;
-}
 body, html { overflow-x:hidden !important;}
 
 html {
@@ -194,8 +191,7 @@ canvas {
 /* Mobile Screen Media Queries */
 
 @media (max-width:480px){
-  .canva{
-    position: relative !important;
-    height : 500px !important;
-  }
+    html, body{
+    height: 40% !important;
+    }
 }
