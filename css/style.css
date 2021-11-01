@@ -188,10 +188,3 @@ canvas {
   color: #FFF !important;
 }
 
-/* Mobile Screen Media Queries */
-
-@media (max-width:480px){
-   .particle-network-animation{
-   display: none !important;
-  }
-}
